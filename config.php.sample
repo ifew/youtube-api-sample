@@ -1,0 +1,11 @@
+<?php
+define("DB_HOST", "127.0.0.1");
+define("DB_USER", "root");
+define("DB_PASS", "1234");
+define("DB_NAME", "youtube-api");
+
+define("APP_NAME", "youtube-test");
+define("APP_CREDENTIAL_CLIENT_JSON", "client_secret.json");
+define("APP_CREDENTIAL_SERVICE_ACCOUNT_JSON", "service-account-credentials.json");
+define("APPL_OAUTH_CLIENT_ID", "xxxx-xxxxx.apps.googleusercontent.com");
+define("APPL_OAUTH_SECRET", "xxxx-xxxx");

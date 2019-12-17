@@ -1,0 +1,25 @@
+
+DROP TABLE IF EXISTS `youtuber`;
+
+CREATE TABLE `youtuber` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `gid` varchar(255) DEFAULT NULL,
+  `firstname` varchar(255) DEFAULT NULL,
+  `lastname` varchar(255) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `picture` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `gid` (`gid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `youtuber_live`;
+
+CREATE TABLE `youtuber_live` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `gid` varchar(255) DEFAULT NULL,
+  `channel_id` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `gid` (`gid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
